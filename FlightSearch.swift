@@ -45,7 +45,7 @@ class NetworkManager: ObservableObject {
         return sampleAirports
     }
 
-    /*func fetchAirports(query: String, completion: @escaping ([Airport]) -> Void) {
+    func fetchAirports(query: String, completion: @escaping ([Airport]) -> Void) {
         guard let url = URL(string: "\(baseURL)?query=\(query)") else { return }
         
         var request = URLRequest(url: url)
@@ -82,5 +82,5 @@ class NetworkManager: ObservableObject {
                 }
             }
         }.resume()
-    }*/
+    }
 }
